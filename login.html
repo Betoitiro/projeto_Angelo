@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seja bem-vindo</title>
+    <style>
+        body{
+            background-color: lavender;
+        }
+    </style>
 </head>
 <body>
     <div class="cadas"><center>
@@ -15,23 +20,14 @@
                 <labee for="password">Senha</labee>
                 <input type="password" id="password" name="password"><br>
 
-                <button type="button" onclick="cadastrar()">Cadastrar</button>
+                <a href="principal.html" type="button">
+                    <button type="button" onclick="cadastrar()">Cadastrar</button>
+                </a>
             </form>
      </fieldset>
     </div></center>
         <div id="nome-usuario" class="apresation"></div>
-    <script>
-        let usuarios = []
 
-        function cadastrar(){
-            let nome = document.getElementById("nome").value;
-            let Senha = document.getElementById("password").value;
-        
-            let usuario = (nome, Senha);
-            usuarios.push(usuario);
-
-            document.getElementById("nome-usuario").textContent = nome
-        }
-    </script>
+        <script src="index.js"></script>
 </body>
 </html>
