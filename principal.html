@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria Cravo e Canela</title>
+    <script src="index.js"></script>
     <Style>
         body{
             background-color:rgb(255, 248, 248) ;
@@ -15,11 +16,14 @@
 </head>
 <body>
     <div>
-        <h1>
-            Seja bem vindo!    <span id="nome-usuario"></span>
-            Vamos as compras
-        </h1>
+        <h2>
+            Seja bem vindo <span id="nome-usuario"></span>
+        </h2>
+        <button onclick="adicionarCarrinho({nome: 'item1', preco: 10})">Adicionar ao carrinho</button>
+        <button onclick="adicionarCarrinho({nome: 'item2', preco: 20})">Adicionar ao carrinho</button>
+
+        <button onclick="pedido"> Fazer pedido</button>
+        <p id="pedido"></p>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>
