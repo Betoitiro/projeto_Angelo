@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>localização</title>
+    <style>
+        #map{ 
+            height: 400px;
+            width: 56%;
+        }
+        body{
+            background-image: url(back.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        teste
-    </h1>
+    <div><center>
+        <h1>A localização é:</h1>
+        
+        <div id="map"></div>
+        <a href="https://www.google.com/maps/place/padaria+e+conveniencia+cravo+e+canela/
+        @-7.1175836,-34.8227926,14.74z/data=!4m6!3m5!1s0x7acddfcd25a2933:0x3f515a707c281eff
+        !8m2!3d-7.1171175!4d-34.8235646!16s%2Fg%2F11tg994cgd">
+            <button type="button">Chega junto</button>
+        </a>
+    </div></center>
+    <script src="loc.js"></script>
 </body>
 </html>
