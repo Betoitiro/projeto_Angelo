@@ -1,53 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Seja bem-vindo</title>
-    <style>
-        body{
-            background-color: lavender;
-        }
-        fieldset{
-            border: 1px solid #000000;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .cadas{
-            position: absolute;
-            top: -30%;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 20%;
-            height: 20%;
-        }
-        .legenda{
-            font-style:normal 30px arial;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="cadas"><center>
+    <div class="cadas">
         <fieldset>
             <img src="logo.png" alt=""> <br>
             <form>
-                <legend class="legenda">CADASTRO</legend>
-                <br><br>
+                <h2>LOGIN</h2>
+                <br>
                 <label for = 'nome'></label>
-                <input type="text" id="nome" name="name" placeholder="Digite seu nome:"><br><br>
+                <input type="text" id="nome" name="name" placeholder="Digite seu nome"><br><br>
                 <label for="password"></labee>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha:"><br>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
                 <a href="principal.html">
-                    <button type="button" onclick="cadastrar()">Cadastrar</button>
+                    <br><br>
+                    <button type="button" onclick="login()">Enviar</button>
                 </a>
-                <div><center>
-
+                <div>
             </form>
-     </fieldset>
-    <script src="index.js"></script>
+        </fieldset>
+        <script src="index.js"></script>
 </body>
 </html>
