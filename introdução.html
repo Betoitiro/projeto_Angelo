@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opções</title>
     <link rel="stylesheet" href="styleop.css">
-    <link rel="stylesheet" href="dados.js">
 </head>
 <body>
     <header>
-        <div nome ></div>
         <h1>Padaria Cravo e Canela</h1>
     </header>
     <nav>
@@ -63,7 +61,7 @@
 
 
     <script>
-            function exibirPreco(event, preco) {
+        function exibirPreco(event, preco) {
             var preview = event.target.getElementsByClassName("preview")[0];
             preview.style.display = "block";
             preview.textContent = preco;
@@ -73,6 +71,7 @@
             var preview = event.target.getElementsByClassName("preview")[0];
             preview.style.display = "none";
         }
+
     </script>
 </body>
 </html>
