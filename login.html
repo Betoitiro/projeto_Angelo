@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="long.js">
+    <link rel="stylesheet" href="dados.js">
     <title>Seja bem-vindo</title>
 </head>
 <body>
@@ -18,13 +18,11 @@
                 <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
                 <input type="password" id="senha" placeholder="Digite sua senha"><br>
                 <br><br>
-                <button onclick="salvarNome()">Salvr</button><br>
                 <a href="introdução.html">
-                    <button type="button">Entrar</button>
+                    <button type="button" onclick="salvarNome()">Salvar</button><br>
                 </a>
             </form>
         </fieldset>
-        <div id="exibicao-nome"></div>
     </div>  
     <script>
 
