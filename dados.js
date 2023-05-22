@@ -7,3 +7,4 @@ function salvarNome() {
     function exibirNome(nome) {
     document.getElementById("exibicao-nome").textContent = "Bem-vindo, " + nome;
     }
+w

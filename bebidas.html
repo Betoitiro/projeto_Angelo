@@ -5,12 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylebebidas.css">
 </head>
 <body>
-    <ul>
-        <li>
-            Heiniken
-        </li>   
-    </ul>
+    <center><img src="logo.png" alt=""></center>
+    <div class="revista-bebidas">
+
+        <div class="bebida" onmouseover="destacarBebida(this)" onmouseout="removerDestaqueBebida(this)">
+            <img src="heinekenlata.webp" alt="Bebida 1" style="width: 200px; height: 200px;">
+            <h3>Heineken Lata</h3>
+            <p>R$7,00</p>
+          </div>
+          <br><br><br>
+
+        <div class="bebida" onmouseover="destacarBebida(this)" onmouseout="removerDestaqueBebida(this)">
+          <img src="heineken330ml.jfif" alt="Bebida 1" style="width: 200px; height: 200px;">
+          <h3>Heineken 330ml</h3>
+          <p>R$12,00</p>
+        </div>
+        <br><br><br>
+        
+        <div class="bebida" onmouseover="destacarBebida(this)" onmouseout="removerDestaqueBebida(this)">
+          <img src="heineken600.webp" alt="Bebida 2" style="width: 200px; height: 200px;">
+          <h3>Heineken 600ml</h3>
+          <p>R$16,00</p>
+        </div>
+        
+        <!-- Adicione mais divs de bebida conforme necessário -->
+    </div>
+    
+    <script>
+        function destacarBebida(bebida) {
+        bebida.classList.add('destacada');
+        }
+
+        function removerDestaqueBebida(bebida) {
+        bebida.classList.remove('destacada');
+        }
+
+    </script>
 </body>
 </html>
