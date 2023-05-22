@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="long.js">
     <title>Seja bem-vindo</title>
 </head>
 <body>
@@ -14,17 +15,19 @@
             <form>
                 <h2>LOGIN</h2>
                 <br>
-                <label for = 'nome'></label>
-                <input type="text" id="nome" name="name" placeholder="Digite seu nome"><br><br>
-                <label for="password"></labee>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
+                <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+                <input type="password" id="senha" placeholder="Digite sua senha"><br>
+                <br><br>
+                <button onclick="salvarNome()">Salvr</button><br>
                 <a href="introdução.html">
-                    <br><br>
-                    <button type="button" onclick="login()">Enviar</button>
+                    <button type="button">Entrar</button>
                 </a>
-                <div>
             </form>
         </fieldset>
-        <script src="index.js"></script>
+        <div id="exibicao-nome"></div>
+    </div>  
+    <script>
+
+    </script>
 </body>
 </html>

@@ -8,21 +8,66 @@
     <link rel="stylesheet" href="styleop.css">
 </head>
 <body>
-    <fieldset><center>
-        <div class="butao"><center>
-            <h2>
-                <br>
-                O que você deseja?
-            </h2>
-            <a href="Cardapio.html">
-                <button id="butao"type="button" >Cardapio</button>
-            </a> 
-            <br><br>
-            <a href="localização.html">
-                <button id="butao" type="button">localização</button>
-            </a>
-        </div> </center>
-        <br><br>
-    </center></fieldset>
+    <header>
+        <div id="exibicao-nome"></div>
+        <h1>Padaria Cravo e Canela</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="lista-item"><a href="Cardapio.html">Cardápio</a></li>
+            <li onmouseover="exibirPreco(event, 'Pão Frances: R$19,00')" onmouseout="ocultarPreco(event)">
+                Pão <span class="preview"></span>
+            </li>
+            <li onmouseover="exibirPreco(event, 'Salgado: R$8,00')" onmouseout="ocultarPreco(event)">
+                Salgado <span class="preview"></span>
+            </li>
+            <li class="lista-item" onmouseover="exibirPreco(event, 'Execultivo: R$ 25,00')" onmouseout="ocultarPreco(event)">
+                Execultivo <span class="preview"></span>
+            </li>
+            <li class="lista-item" onmouseover="exibirPreco(event, 'Sopa: R$11,00')" onmouseout="ocultarPreco(event)">
+                Sopa <span class="preview"></span>
+            </li>
+            <li class="lista-item"><a href="localização.html">Localização</a></li>
+
+    
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Bem-vindo à Padaria Cravo e Canela!</h2>
+            <p>Escolha uma opção acima para ver nosso cardápio ou encontrar nossa localização.
+                Tudo que voce procura esta aqui!<br>
+                Temos:<br>
+                Lanche, almoço, cafe, espetinho, sucos e tudo mais!<br>
+                Venha conferir a padaria Cravo e Canela, voce não vai se arrepender
+            </p>
+
+            <p>
+                Contato:<br>
+                (83) 20028922<br>
+                Instagram:<br>
+                @padariacravoecanelapb  
+            </p>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p>© 2023 Padaria Delícia. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+            function exibirPreco(event, preco) {
+            var preview = event.target.getElementsByClassName("preview")[0];
+            preview.style.display = "block";
+            preview.textContent = preco;
+        }
+
+        function ocultarPreco(event) {
+            var preview = event.target.getElementsByClassName("preview")[0];
+            preview.style.display = "none";
+        }
+    </script>
 </body>
 </html>
